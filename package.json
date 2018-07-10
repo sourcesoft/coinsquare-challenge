@@ -5,18 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "server": "node src/server/index.js",
     "build": "webpack --mode production"
   },
   "author": "Pouya Sanooei",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
+    "request": "^2.87.0",
     "styled-components": "^3.3.3"
   },
   "devDependencies": {

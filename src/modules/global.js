@@ -1,3 +1,5 @@
+import { INITIAL_USD } from '../utils/config';
+
 // Actions constants
 const SET_USD = 'coinsquare/global/SET_USD';
 const SET_BTC = 'coinsquare/global/SET_BTC';
@@ -12,7 +14,7 @@ const initialValue = {
     loading: false,
   },
   balance: {
-    usd: 156.12,
+    usd: INITIAL_USD,
     btc: 0,
   },
   trade: {

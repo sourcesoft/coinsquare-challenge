@@ -13,7 +13,12 @@ class SubmitButton extends Component {
   render() {
     const { children, ...props } = this.props;
     return (
-      <StyledButton type="submit" onClick={props.onClick} value="Trade">
+      <StyledButton
+        disabled={props.disabled}
+        type="submit"
+        onClick={props.onClick}
+        value={this.props.loading ? 'Loading...' : 'Trade'}
+      >
         {children}
       </StyledButton>
     );
