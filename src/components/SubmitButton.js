@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.input`
-  background-color: #253ae4;
+  background-color: ${props => (props.disabled ? '#828282' : '#253ae4')};
   color: #fff;
   text-align: center;
-  padding: 20px 30px;
+  padding: 30px 30px;
   font-size: 2rem;
+  width: 100%;
+  letter-spacing: 3px;
 `;
 
 class SubmitButton extends Component {

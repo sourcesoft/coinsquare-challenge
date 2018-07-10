@@ -7,7 +7,10 @@ import CurrencyType from '../components/CurrencyType';
 
 class TradeControls extends Component {
   handleChangeAmount = event => {
-    this.props.setAmount(event.target.value);
+    const value = event.target.value;
+    if (!isNaN(value) && Number(value) >= 0) {
+      this.props.setAmount(value);
+    }
   };
   render() {
     // @TODO: add i18n for texts
@@ -15,7 +18,7 @@ class TradeControls extends Component {
       <div>
         <CurrencyType>USD</CurrencyType>
         <Input
-          value={this.props.usd}
+          value={this.props.amount}
           onChange={this.handleChangeAmount}
           placeholder="Enter your amount"
         />

@@ -33,6 +33,7 @@ injectGlobal`
   }
   body {
     font-size: 100%;
+    background-color: #F8F8F8;
   }
   ol, ul {
     list-style: none;
@@ -62,6 +63,16 @@ class App extends Component {
   getCalculatedBTC = () => {
     return this.props.amount / this.props.bitcoinPrice;
   };
+  shouldSubmit = () => {
+    console.log(Number(this.props.amount));
+    if (this.props.amount === '' || isNaN(this.props.amount)) {
+      return false;
+    }
+    return (
+      Number(this.props.amount) > 0 &&
+      Number(this.props.usd) > Number(this.props.amount)
+    );
+  };
   handleTrade = event => {
     event.preventDefault();
     this.props.setBTC(this.props.btc + this.getCalculatedBTC());
@@ -78,15 +89,17 @@ class App extends Component {
           <LegendHeader>For</LegendHeader>
           <CurrencyType>
             BTC{' '}
-            {!this.props.loading && <span>({this.props.bitcoinPrice})</span>}
+            {!this.props.loading && (
+              <span>( = {this.props.bitcoinPrice} $)</span>
+            )}
           </CurrencyType>
           <CurrencyType>{this.getCalculatedBTC()}</CurrencyType>
+          <Messages />
           <SubmitButton
-            disabled={this.props.usd < this.props.amount}
+            disabled={!this.shouldSubmit()}
             onClick={this.handleTrade}
             loading={this.props.loading}
           />
-          <Messages />
         </form>
       </Wrapper>
     );

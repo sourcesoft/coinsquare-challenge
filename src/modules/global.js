@@ -19,7 +19,7 @@ const initialValue = {
   },
   trade: {
     bitcoinPrice: 150, // Bitcoin market price, will be fetched from public API
-    amount: 0, // USD amount which user is requesting
+    amount: null, // USD amount which user is requesting
   },
 };
 

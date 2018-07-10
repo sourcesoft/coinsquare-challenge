@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { TRADE_LIMIT } from '../utils/config';
 
+const MessageItem = styled.div`
+  color: #ec4d4d;
+  padding: 0 30px 20px;
+  font-size: 1.2rem;
+`;
+
 class TradeControls extends Component {
   handleChangeAmount = event => {
     this.props.setAmount(event.target.value);
@@ -13,11 +19,15 @@ class TradeControls extends Component {
     // @TODO: add i18n for texts
     return (
       <div>
-        {this.shouldDisplayLowBalance() && <div>not enough balance</div>}
-        {this.shouldDisplayTradeLimit() && (
-          <div>can not trade more than 156.12$ at once</div>
+        {this.shouldDisplayLowBalance() && (
+          <MessageItem>* You do not have enough balance in your account!</MessageItem>
         )}
-        {this.props.errorMsg && <div>{this.props.errorMsg}</div>}
+        {this.shouldDisplayTradeLimit() && (
+          <MessageItem>* Trades more than 156.12$ are not allowed!</MessageItem>
+        )}
+        {this.props.errorMsg && (
+          <MessageItem>{this.props.errorMsg}</MessageItem>
+        )}
       </div>
     );
   }

@@ -4,8 +4,10 @@ import styled from 'styled-components';
 const StyledInput = styled.input`
   color: #1f1e1f;
   text-align: left;
-  padding: 5px 8px;
   font-size: 1.2rem;
+  padding: 15px 25px;
+  margin-bottom: 10px;
+  width: 100%;
   &:focus {
     background-color: #fff;
   }
