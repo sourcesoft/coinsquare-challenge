@@ -1,14 +1,14 @@
 import { INITIAL_USD } from '../utils/config';
 
 // Actions constants
-const SET_USD = 'coinsquare/global/SET_USD';
-const SET_BTC = 'coinsquare/global/SET_BTC';
-const SET_LOADING = 'coinsquare/global/SET_LOADING';
-const SET_ERROR_MSG = 'coinsquare/global/SET_ERROR_MSG';
-const SET_BITCOIN_PRICE = 'coinsquare/global/SET_BITCOIN_PRICE';
-const SET_AMOUNT = 'coinsquare/global/SET_AMOUNT';
+export const SET_USD = 'coinsquare/global/SET_USD';
+export const SET_BTC = 'coinsquare/global/SET_BTC';
+export const SET_LOADING = 'coinsquare/global/SET_LOADING';
+export const SET_ERROR_MSG = 'coinsquare/global/SET_ERROR_MSG';
+export const SET_BITCOIN_PRICE = 'coinsquare/global/SET_BITCOIN_PRICE';
+export const SET_AMOUNT = 'coinsquare/global/SET_AMOUNT';
 
-const initialValue = {
+export const initialValue = {
   form: {
     errorMsg: '',
     loading: false,
