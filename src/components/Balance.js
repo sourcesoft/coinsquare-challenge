@@ -6,10 +6,12 @@ class Balance extends Component {
     return (
       <div>
         <div>
-          <b>USD</b> 156.12
+          <b>USD</b>
+          {this.props.usd}
         </div>
         <div>
-          <b>BTC</b> 0.000000000
+          <b>BTC</b>
+          {this.props.btc}
         </div>
       </div>
     );
