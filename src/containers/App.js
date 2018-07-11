@@ -64,10 +64,11 @@ export class App extends Component {
     return this.props.amount / this.props.bitcoinPrice;
   };
   shouldSubmit = () => {
-    console.log(Number(this.props.amount));
+    // check if amount is not empty or it's an integer
     if (this.props.amount === '' || isNaN(this.props.amount)) {
       return false;
     }
+    // checks if amount is positive and if we have enough balance
     return (
       Number(this.props.amount) > 0 &&
       Number(this.props.usd) > Number(this.props.amount)
