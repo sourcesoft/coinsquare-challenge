@@ -14,7 +14,7 @@ const StyledInput = styled.input`
   border: 1px solid #000;
 `;
 
-class Input extends Component {
+export class Input extends Component {
   render() {
     const { children, ...props } = this.props;
     return <StyledInput {...props}>{children}</StyledInput>;

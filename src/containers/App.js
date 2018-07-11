@@ -40,7 +40,7 @@ injectGlobal`
   }
 `;
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     // fetch BTC price
     this.props.setLoading(true);

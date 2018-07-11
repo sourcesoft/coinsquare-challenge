@@ -4,10 +4,15 @@ A simple Bitcoin price calculator form in React
 
 #### Get Started:
 
-Install and run:
+Install:
 
 ```
 yarn
+```
+
+Run:
+
+```
 yarn start # runs both server and client in parallel
 yarn server # runs express server
 yarn dev # runs webpack dev server and launch browser
@@ -30,10 +35,12 @@ Remember opening the built html won't work without a running server (`yarn serve
 - As requested, form validations are implemented in client only (no async server
   validations)
 - To keep the code simple no Thunks or Sagas are used to handle XHR.
+- Tests are not 100% covered but there is one for each type of test just to
+  showcase an example.
 
 #### Libraries Used:
 
 - React
 - Redux
 - styled-components
-- Webpack, Jest, Babel, Express
+- Webpack, Jest, Enzyme, Babel, Express

@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Balance component with 23 usd and 40 btc 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Balance
+    btc={40}
+    usd={23}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <div>
+          <styled.span>
+            USD
+          </styled.span>
+          <styled.span>
+            23.00
+          </styled.span>
+        </div>,
+        <div>
+          <styled.span>
+            BTC
+          </styled.span>
+          <styled.span>
+            40.00000000
+          </styled.span>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <styled.span>
+              USD
+            </styled.span>,
+            <styled.span>
+              23.00
+            </styled.span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "USD",
+            },
+            "ref": null,
+            "rendered": "USD",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "23.00",
+            },
+            "ref": null,
+            "rendered": "23.00",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <styled.span>
+              BTC
+            </styled.span>,
+            <styled.span>
+              40.00000000
+            </styled.span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "BTC",
+            },
+            "ref": null,
+            "rendered": "BTC",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "40.00000000",
+            },
+            "ref": null,
+            "rendered": "40.00000000",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <div>
+            <styled.span>
+              USD
+            </styled.span>
+            <styled.span>
+              23.00
+            </styled.span>
+          </div>,
+          <div>
+            <styled.span>
+              BTC
+            </styled.span>
+            <styled.span>
+              40.00000000
+            </styled.span>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <styled.span>
+                USD
+              </styled.span>,
+              <styled.span>
+                23.00
+              </styled.span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "USD",
+              },
+              "ref": null,
+              "rendered": "USD",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "23.00",
+              },
+              "ref": null,
+              "rendered": "23.00",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <styled.span>
+                BTC
+              </styled.span>,
+              <styled.span>
+                40.00000000
+              </styled.span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "BTC",
+              },
+              "ref": null,
+              "rendered": "BTC",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "40.00000000",
+              },
+              "ref": null,
+              "rendered": "40.00000000",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

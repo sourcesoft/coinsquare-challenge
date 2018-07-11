@@ -13,7 +13,7 @@ const Value = styled.span`
   margin-left: 35px;
 `;
 
-class Balance extends Component {
+export class Balance extends Component {
   render() {
     return (
       <Wrapper>

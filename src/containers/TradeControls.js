@@ -5,7 +5,7 @@ import { setAmount } from '../modules/global';
 import Input from '../components/Input';
 import CurrencyType from '../components/CurrencyType';
 
-class TradeControls extends Component {
+export class TradeControls extends Component {
   handleChangeAmount = event => {
     const value = event.target.value;
     if (!isNaN(value) && Number(value) >= 0) {

@@ -11,7 +11,7 @@ const StyledButton = styled.input`
   letter-spacing: 3px;
 `;
 
-class SubmitButton extends Component {
+export class SubmitButton extends Component {
   render() {
     const { children, ...props } = this.props;
     return (

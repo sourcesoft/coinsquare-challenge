@@ -9,11 +9,13 @@ const MessageItem = styled.div`
   font-size: 1.2rem;
 `;
 
-class TradeControls extends Component {
+export class Messages extends Component {
   handleChangeAmount = event => {
     this.props.setAmount(event.target.value);
   };
+  // reject trades if there's not enough balance
   shouldDisplayLowBalance = () => this.props.usd < this.props.amount;
+  // reject trades more than limit
   shouldDisplayTradeLimit = () => this.props.amount > TRADE_LIMIT;
   render() {
     // @TODO: add i18n for texts
@@ -47,4 +49,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(TradeControls);
+)(Messages);
